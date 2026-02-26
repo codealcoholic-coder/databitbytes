@@ -1,9 +1,9 @@
 import { Category, CategoryKey, Post } from "./types";
 
 export const categories: Category[] = [
-  { key: "notes", label: "Founder Notes 🚀", description: "Stories, lessons, and practical ideas for building in AI." },
+  { key: "notes", label: "Josep's Notes 🚀", description: "Stories, lessons, and practical ideas for building in AI." },
   { key: "cheatsheets", label: "Cheatsheets 🧩", description: "Concise explainers for ML, MLOps, and AI tooling." },
-  { key: "sql", label: "Data Engineering SQL 🔢", description: "Hands-on SQL for analytics engineering and AI pipelines." },
+  { key: "sql", label: "SQL crash course 🔢", description: "Hands-on SQL for analytics engineering and AI pipelines." },
   { key: "getting-started", label: "Getting Started ⬆️", description: "Beginner-friendly guides for Python, ML and AI careers." },
   { key: "guest-bites", label: "TheGuestBites 🎙️", description: "Guest stories from researchers, builders, and practitioners." },
   { key: "deep-learning", label: "Deep Learning 🧠", description: "Neural networks, CV, NLP, and model optimization." },

@@ -13,10 +13,21 @@ export default function TopicPage({ params }: { params: { slug: string } }) {
   const posts = getPosts(category.key);
 
   return (
-    <section className="section">
-      <h2>{category.label}</h2>
-      <p>{category.description}</p>
-      <PostList posts={posts} />
-    </section>
+    <main className="content container">
+      <section className="topic-header">
+        <h1>{category.label}</h1>
+        <p>{category.description}</p>
+      </section>
+
+      <section className="list-wrap">
+        <div className="tab-row">
+          <button className="tab active">Latest</button>
+          <button className="tab">Top</button>
+          <button className="tab">Discussions</button>
+          <span className="search-icon">⌕</span>
+        </div>
+        <PostList posts={posts} />
+      </section>
+    </main>
   );
 }
