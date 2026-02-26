@@ -1,11 +1,19 @@
-import Link from "next/link";
+import { PostList } from "@/components/PostList";
+import { getPosts } from "@/lib/content";
 
 export default function NotFound() {
   return (
-    <div className="page" style={{ padding: 40 }}>
+    <main className="content container not-found-wrap">
       <h1>Page not found</h1>
-      <p>This route does not exist yet. Go back home.</p>
-      <Link href="/">Return home</Link>
-    </div>
+      <section className="list-wrap">
+        <div className="tab-row">
+          <button className="tab active">Latest</button>
+          <button className="tab">Top</button>
+          <button className="tab">Discussions</button>
+          <span className="search-icon">⌕</span>
+        </div>
+        <PostList posts={getPosts()} />
+      </section>
+    </main>
   );
 }
